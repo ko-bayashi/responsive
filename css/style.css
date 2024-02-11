@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+.box {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background: #ff0000;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.color {
+  background: #ff0000;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex__blue {
+  margin-right: 150px;
+  background: #0008ff;
+  width: 300px;
+  height: 300px;
+}
+
+.flex__green {
+  background: #22ff00;
+  width: 300px;
+  height: 300px;
+}
+
+.clearfix {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.float--red {
+  background: #ff0000;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.float--blue {
+  background: #0008ff;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex2__red {
+  background: #ff0000;
+  width: 300px;
+  height: 300px;
+}
+
+.flex2__blue {
+  background: #0008ff;
+  width: 300px;
+  height: 300px;
+}
+
+.flex2__orange {
+  background: #ff8400;
+  width: 300px;
+  height: 300px;
+}
+
+.text--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex3__green {
+  background: #00ff51;
+  width: 300px;
+  height: 300px;
+}
+
+.flex3__yellow {
+  background: #d4ff00;
+  width: 300px;
+  height: 300px;
+}
+
+.flex3__purple {
+  background: #ff00e1;
+  width: 300px;
+  height: 300px;
+}
+
+.flex__red {
+  background: #ff0000;
+  width: 300px;
+  height: 300px;
+}
+
+.flex__blue2 {
+  background: #0008ff;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+}
+
+@media screen and (max-width:959px) {
+  .red {
+    width: 200px;
+    height: 200px;
+  }
+
+  .color {
+    background: #007bff;
+  }
+
+  .flex__blue {
+    margin-right: 50px;
+    background: #0008ff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .float--red {
+    float: none;
+  }
+
+  .float--blue {
+    float: none;
+  }
+
+  .flex2 {
+    flex-direction: row-reverse;
+  }
+
+  .flex3__green {
+    order: 2;
+  }
+
+  .flex3__yellow {
+    order: 3;
+  }
+
+  .flex3__purple {
+    order: 1;
+  }
+
+  .flex__blue2 {
+    opacity: 1;
+  }
+}
